@@ -19,6 +19,7 @@ class Contador extends Component {
                 <h2>Contador</h2>
                 <button onClick={this.inc}>+</button>
             </div>
+     
         )
     }
 }
