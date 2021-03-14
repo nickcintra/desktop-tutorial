@@ -17,6 +17,7 @@ import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
 import Input from './components/formulario/input'
+import Contador  from './components/contador/Contador'
 
 
 export default function App(props) {
@@ -25,6 +26,10 @@ export default function App(props) {
             <h1>Fundamentos React</h1>
 
             <div className="Cards">
+
+                <Card titulo="#12 - Contador" color="#424242">
+                    <Contador numeroInicial={10}></Contador>
+                </Card>
 
                 <Card titulo="#11 - Componente Controlado" color="#E45F56">
                     <Input></Input>
