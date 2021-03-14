@@ -7,7 +7,7 @@ export default props => {
     const [nerd, setNerd] = useState(false)
 
     // nome idade nerd
-    function fornecerInformacoes(nome, idade, nerd){
+    function fornecerInformacoes(nome, idade, nerd) {
         setNome(nome)
         setIdade(idade)
         setNerd(nerd)
@@ -16,10 +16,12 @@ export default props => {
 
     return (
         <div>
-            <span>{nome} </span>
-            <span><strong>{idade}</strong></span>
-            <span> {nerd ? 'Verdadeiro' : 'Falso'}</span>
-            <div>PAI</div>
+            <div>
+                <span>{nome} </span>
+                <span><strong>{idade}</strong></span>
+                <span> {nerd ? 'Verdadeiro' : 'Falso'}</span>
+                <div>PAI</div>
+            </div>
             <IndiretaFilho quandoClicar={fornecerInformacoes}></IndiretaFilho>
         </div>
     )
